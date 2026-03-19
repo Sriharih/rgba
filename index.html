@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play with rgba</title>
+    <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+    <div id="step1">
+        <br>
+        <div class="row px-2">
+            <div class="col-4 pl-5"><button id="add" class="btn btn-success">Generate</button></div>
+            <div class="col-8 pr-5" style="width: 50%;"><input type="text" class="form-control" id="color"></div>
+        </div>
+        
+        
+    </div>
+    <br><br>
+    <div id="maincontent">
+        <div id="step2s"  class="border border-default">
+            <center>
+                <div id="step2_1"></div>
+                <button id="add_top" class="btn btn-success">Add</button>
+                <button id="remove_top" onclick="removeTop()" class="btn btn-danger">Remove</button>
+                <br>
+                <hr>
+                <div id="step2"></div>
+                <div id="step2_1">
+                    
+                    <hr>
+                    <button id="add_bottom" class="btn btn-success">Add</button>
+                    <button id="remove_bottom" onclick="removeBottom()" class="btn btn-danger">Remove</button>
+                </div>
+                
+                <div id="step2_1">
+                    
+                    <hr>
+                    <button id="red_sort" class="btn btn-outline-danger">Red Sort</button>
+                    <button id="green_sort" class="btn btn-outline-success">Green Sort</button>
+                    <button id="blue_sort" class="btn btn-outline-primary">Blue Sort</button>
+                </div>
+            </center>
+        </div>
+        <div id="output_body">
+                   <center><div id="output"></div></center> 
+        </div>
+
+    </div>
+    <div id="step3">
+        <div class="row mt-5">
+        <div id="no1"  class="col-lg-6 col-md-5 col-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 col-xs-12"><input type="text" class="form-control" id="copy_start" placeholder="Start"></div>
+                <div class="col-lg-4 col-md-3 col-xs-12"><input type="text" class="form-control" id="copy_end" placeholder="End"></div>
+                <div class="col-lg-4 col-md-6 col-12"><button id="copy" class="btn btn-success">Copy List</button></div>    
+            </div>
+            
+            
+            
+        </div>
+        <div id="no2"  class="col-lg-6 col-md-5 col-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 col-xs-12"><input type="text" class="form-control" id="move_start" placeholder="Start"> </div>
+                <div class="col-lg-4 col-md-3 col-xs-12"><input type="text" class="form-control" id="move_end" placeholder="#no of items"></div>
+                <div class="col-lg-4 col-md-6 col-12"><button id="move" class="btn btn-success">Move List</button></div>
+            </div>       
+        </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
